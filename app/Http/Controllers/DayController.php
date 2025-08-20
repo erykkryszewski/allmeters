@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Day;
+use App\Services\ScoreEngine;
 
 class DayController extends Controller
 {
@@ -26,16 +27,21 @@ class DayController extends Controller
     // attach the date coming from the url
     $data['date'] = $date;
 
+    // compute score with current partial engine
+    // note: this uses only fields we currently collect
+    $result = ScoreEngine::score($data);
+    $data['score'] = $result['total'];
+    $data['score_breakdown'] = json_encode($result['breakdown']);
+
     // upsert by date (only one entry per day)
-    // if the day exists → update, else → create
     Day::updateOrCreate(
-      ['date' => $date],   // unique key
-      $data                 // values to set
+      ['date' => $date],  // unique key
+      $data               // values to set
     );
 
     // redirect back to the entries page with a success message
     return redirect()
       ->route('entries', $date)
-      ->with('status', 'day saved');
+      ->with('status', 'Day saved. Score: ' . $result['total'] . ' / ' . $result['max_partial']);
   }
 }

@@ -53,5 +53,13 @@
 
       <button class="btn btn-primary" type="submit">Save</button>
     </form>
+
+    {{-- simple score preview (optional) --}}
+    @if (session('status'))
+      <div class="alert alert-info mt-3">
+        {{ session('status') }}
+      </div>
+    @endif
+
   </div>
 @endsection
