@@ -66,6 +66,7 @@ class DayController extends Controller
     // redirect back to the entries page with a success message
     return redirect()
       ->route('entries', $date)
-      ->with('status', 'Day saved. Score: ' . $result['total'] . ' / ' . $result['max_partial']);
+      ->with('status', 'Day saved. Score: ' . $result['total'] . ' / ' . $result['max_total_positive']);
+
   }
 }
