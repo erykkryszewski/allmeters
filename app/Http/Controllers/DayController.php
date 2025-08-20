@@ -44,6 +44,7 @@ class DayController extends Controller
     $data['other_drugs']      = (bool) ($data['other_drugs'] ?? false);
     $data['meditation']       = (bool) ($data['meditation'] ?? false);
     $data['reading']          = (bool) ($data['reading'] ?? false);
+    $data['chess_games'] = isset($data['chess_games']) ? (int)$data['chess_games'] : 0;
     $data['other_chess_games']= (bool) ($data['other_chess_games'] ?? false); 
 
 

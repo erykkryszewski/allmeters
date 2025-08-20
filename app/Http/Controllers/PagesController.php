@@ -68,6 +68,9 @@ class PagesController extends Controller
       $cursor->addDay();
     }
 
+    // reverse for display: newest first
+    $series = array_reverse($series);
+
     // average only over days that exist
     $avg = null;
     if (count($scoresForAvg) > 0) {

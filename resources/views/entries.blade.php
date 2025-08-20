@@ -107,62 +107,62 @@
 
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="wife_time" name="wife_time" value="1">
-                  <label class="form-check-label" for="wife_time">Time With Wife</label>
+                  <label class="form-check-label" for="wife_time">Minimum 2 godziny czasu wolnego z Olą</label>
                 </div>
               </div>
 
-{{-- habits --}}
-<div class="entries__section mb-4">
-  <h2 class="h6 text-uppercase text-muted fw-semibold mb-3">Habits</h2>
+              {{-- habits --}}
+              <div class="entries__section mb-4">
+                <h2 class="h6 text-uppercase text-muted fw-semibold mb-3">Habits</h2>
 
-  <div class="row g-3">
-    <div class="col-md-6">
-      <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="meditation" name="meditation" value="1">
-        <label class="form-check-label" for="meditation">Meditation</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="reading" name="reading" value="1">
-        <label class="form-check-label" for="reading">Reading</label>
-      </div>
-    </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" id="meditation" name="meditation" value="1">
+                      <label class="form-check-label" for="meditation">Meditation</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="reading" name="reading" value="1">
+                      <label class="form-check-label" for="reading">Reading</label>
+                    </div>
+                  </div>
 
-    <div class="col-md-6">
-      <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="smoking" name="smoking" value="1">
-        <label class="form-check-label" for="smoking">Smoking</label>
-      </div>
-      <div class="form-check mb-2">
-        <input class="form-check-input" type="checkbox" id="alcohol" name="alcohol" value="1">
-        <label class="form-check-label" for="alcohol">Alcohol</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="other_drugs" name="other_drugs" value="1">
-        <label class="form-check-label" for="other_drugs">Other Drugs</label>
-      </div>
-    </div>
-  </div>
-</div>
+                  <div class="col-md-6">
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" id="smoking" name="smoking" value="1">
+                      <label class="form-check-label" for="smoking">Smoking</label>
+                    </div>
+                    <div class="form-check mb-2">
+                      <input class="form-check-input" type="checkbox" id="alcohol" name="alcohol" value="1">
+                      <label class="form-check-label" for="alcohol">Alcohol</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="other_drugs" name="other_drugs" value="1">
+                      <label class="form-check-label" for="other_drugs">Other</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-{{-- chess --}}
-<div class="entries__section mb-4">
-  <h2 class="h6 text-uppercase text-muted fw-semibold mb-3">Chess</h2>
+              {{-- chess --}}
+              <div class="entries__section mb-4">
+                <h2 class="h6 text-uppercase text-muted fw-semibold mb-3">Chess</h2>
 
-  <div class="row g-3">
-    <div class="col-md-6">
-      <label class="form-label fw-semibold" for="chess_games">Games 15+10</label>
-      <input class="form-control" type="number" step="1" min="0" max="20" id="chess_games" name="chess_games">
-      @error('chess_games') <div class="text-danger small">{{ $message }}</div> @enderror
-    </div>
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label fw-semibold" for="chess_games">Games 15+10</label>
+                    <input class="form-control" type="number" step="1" min="0" max="20" id="chess_games" name="chess_games">
+                    @error('chess_games') <div class="text-danger small">{{ $message }}</div> @enderror
+                  </div>
 
-    <div class="col-md-6 d-flex align-items-end">
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="other_chess_games" name="other_chess_games" value="1">
-        <label class="form-check-label" for="other_chess_games">Any Other Games</label>
-      </div>
-    </div>
-  </div>
-</div>
+                  <div class="col-md-6 d-flex align-items-end">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="other_chess_games" name="other_chess_games" value="1">
+                      <label class="form-check-label" for="other_chess_games">Any Other Games</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
 
               <div class="d-flex justify-content-end">
