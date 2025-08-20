@@ -44,7 +44,7 @@
     </main>
 
     <footer class="layout__footer py-3 text-center text-muted">
-      <small>allmeters • v0</small>
+      <small>AllMeters • v1.0</small>
     </footer>
 
     <!-- bootstrap js bundle from cdn -->
