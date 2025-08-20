@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model; // allows to use simpler sql queries usi
 
 class Day extends Model
 {
-    // fields we can fill in bulk
+  // fields we can fill in bulk
   protected $fillable = [
     'date',
     'work_hours',
@@ -23,6 +23,7 @@ class Day extends Model
     'meditation',
     'reading',
     'chess_games',
+    'other_chess_games',   // <— add this
     'water_level',
     'score',
     'score_breakdown',
