@@ -70,7 +70,7 @@
 
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="low_fat" name="low_fat" value="1">
-                  <label class="form-check-label" for="low_fat">Low Fat</label>
+                  <label class="form-check-label" for="low_fat">Low Saturated Fat</label>
                 </div>
               </div>
 
@@ -92,9 +92,9 @@
                   <div class="col-md-6">
                     <label class="form-label fw-semibold" for="social_media_level">Social Media</label>
                     <select class="form-select" id="social_media_level" name="social_media_level" required>
-                      <option value="ok">Ok</option>
-                      <option value="medium">Medium</option>
-                      <option value="high">High</option>
+                      <option value="ok">Up to 15 minutes</option>
+                      <option value="medium">15 - 60 minutes</option>
+                      <option value="high">Over 60 minutes</option>
                     </select>
                     @error('social_media_level') <div class="text-danger small">{{ $message }}</div> @enderror
                   </div>
@@ -107,7 +107,7 @@
 
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" id="wife_time" name="wife_time" value="1">
-                  <label class="form-check-label" for="wife_time">Minimum 2 godziny czasu wolnego z Olą</label>
+                  <label class="form-check-label" for="wife_time">Min. 2 hours free time in the evening</label>
                 </div>
               </div>
 
@@ -119,7 +119,7 @@
                   <div class="col-md-6">
                     <div class="form-check mb-2">
                       <input class="form-check-input" type="checkbox" id="meditation" name="meditation" value="1">
-                      <label class="form-check-label" for="meditation">Meditation</label>
+                      <label class="form-check-label" for="meditation">Mind time</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" id="reading" name="reading" value="1">

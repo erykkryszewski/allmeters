@@ -81,7 +81,7 @@
                   <tr>
                     <th>Date</th>
                     <th class="text-end">Score</th>
-                    <th class="text-end">Δ vs Prev</th>
+                    <th class="text-end">Compare prev</th>
                   </tr>
                 </thead>
                 <tbody>
