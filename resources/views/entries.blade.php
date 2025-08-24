@@ -166,7 +166,7 @@
 
 
               <div class="d-flex justify-content-end">
-                <button class="btn btn-primary" type="submit">Save</button>
+                <button class="btn btn-primary" type="submit">Submit</button>
               </div>
             </form>
           </div>

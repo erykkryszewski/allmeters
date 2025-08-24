@@ -23,7 +23,7 @@ class Day extends Model
     'meditation',
     'reading',
     'chess_games',
-    'other_chess_games',   // <— add this
+    'other_chess_games',   
     'water_level',
     'score',
     'score_breakdown',
